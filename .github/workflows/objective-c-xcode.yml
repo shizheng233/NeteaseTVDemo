@@ -16,6 +16,9 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
 
+      - name: Install tvOS platform
+        run: xcodebuild -downloadPlatform tvOS 
+
       # ── 1. Archive（跳过签名）─────────────────────────────────────
       - name: Archive without signing
         run: |
