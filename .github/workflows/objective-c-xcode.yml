@@ -21,7 +21,7 @@ jobs:
         run: |
           xcodebuild archive \
             -project NeteaseTVDemo.xcodeproj \
-            -scheme MyApptvOS \
+            -scheme NeteaseTVDemo \
             -sdk appletvos \
             -destination 'generic/platform=tvOS' \
             -configuration Release \
